@@ -1,16 +1,18 @@
 <?
-$host = "localhost";
-$user = "root";
-$pass = "1234";
-$dbname = "pasadu";
+// Sample configuration for portfolio only
 
-$condb = mysql_connect($host,$user,$pass) or die (mysql_error());
+$host = "localhost";
+$user = "your_username";
+$pass = "your_password";
+$dbname = "your_database";
+
+$condb = mysql_connect($host,$user,$pass) or die(mysql_error());
 mysql_select_db($dbname,$condb);
 
 mysql_query("SET NAMES TIS620");
-mysql_query("SET character_set_results=utf8");//ตั้งค่าการดึงข้อมูลออกมาให้เป็น utf8
-mysql_query("SET character_set_client=utf8");//ตั้งค่าการส่งข้อมุลลงฐานข้อมูลออกมาให้เป็น utf8
-mysql_query("SET character_set_connection=utf8");//ตั้งค่าการติดต่อฐานข้อมูลให้เป็น utf8
+mysql_query("SET character_set_results=utf8");
+mysql_query("SET character_set_client=utf8");
+mysql_query("SET character_set_connection=utf8");
 
 
 $yn = date("Y")+543;
