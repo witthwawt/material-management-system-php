@@ -1,30 +1,42 @@
 # Material Management System (PHP)
 
-A web-based Material Management System developed as a Bachelor's Degree Final Project using PHP and MySQL.
+โปรเจกต์ระบบจัดการวัสดุสำนักงาน (Material Management System) พัฒนาด้วย **PHP และ MySQL** สำหรับใช้บริหารจัดการวัสดุคงคลัง การเบิกจ่าย และการจัดทำรายงาน โดยเป็น **โครงงานระดับปริญญาตรี** ที่จัดทำขึ้นเพื่อใช้จริงภายในหน่วยงานตัวอย่าง
 
-## Project Overview
-
-This project was developed to manage office materials and inventory, including material requests, stock management, suppliers, users, and reporting. The system helps simplify the material requisition process and improves inventory tracking.
-
-> **Note:** This project was developed in 2016 as my Bachelor's Degree Final Project. It is published for portfolio purposes.
+> **หมายเหตุ:** โปรเจกต์นี้พัฒนาในปี **2016** ในฐานะโครงงานจบระดับปริญญาตรี และนำมาเผยแพร่เพื่อใช้เป็นผลงาน (Portfolio) สำหรับการสมัครงาน
 
 ---
 
-## Features
+## 📌 ภาพรวมของโปรเจกต์
 
-- User Login & Authentication
-- Material Inventory Management
-- Material Request Management
-- Supplier Management
-- Department Management
-- User Management
-- Stock Control
-- Reporting System
-- Database Management
+ระบบถูกออกแบบมาเพื่อช่วยบริหารจัดการวัสดุสำนักงานให้มีประสิทธิภาพมากขึ้น ลดขั้นตอนการทำงาน และสามารถติดตามสถานะวัสดุคงคลังได้อย่างเป็นระบบ
+
+รองรับการจัดการข้อมูลต่าง ๆ เช่น
+
+- การจัดการวัสดุคงคลัง
+- การเบิกวัสดุ
+- การจัดการข้อมูลผู้จำหน่าย (Supplier)
+- การจัดการข้อมูลผู้ใช้งาน
+- การจัดการหน่วยงาน (Department)
+- การควบคุมสต๊อก
+- การออกรายงาน
 
 ---
 
-## Technologies Used
+## ✨ ฟังก์ชันการทำงาน (Features)
+
+- ระบบเข้าสู่ระบบ (Login & Authentication)
+- จัดการข้อมูลวัสดุ (Material Inventory Management)
+- จัดการการเบิกวัสดุ (Material Request Management)
+- จัดการข้อมูลผู้จำหน่าย (Supplier Management)
+- จัดการข้อมูลหน่วยงาน (Department Management)
+- จัดการข้อมูลผู้ใช้งาน (User Management)
+- ควบคุมสต๊อกสินค้า (Stock Control)
+- ระบบรายงาน (Reporting System)
+- จัดการฐานข้อมูล (Database Management)
+
+---
+
+## 🛠️ เทคโนโลยีและเครื่องมือที่ใช้
 
 - PHP
 - MySQL
@@ -35,70 +47,84 @@ This project was developed to manage office materials and inventory, including m
 
 ---
 
-## Project Structure
+## 📁 โครงสร้างโปรเจกต์
 
-```
+```text
 material-management-system-php/
 │
-├── source/            # PHP source code
-├── database/          # MySQL database
-├── docs/              # User manual
-├── screenshots/       # System screenshots
+├── source/          # Source Code
+├── database/        # MySQL Database
+├── docs/            # คู่มือการใช้งาน
+├── screenshots/     # ภาพตัวอย่างระบบ
 └── README.md
 ```
 
 ---
 
-## Installation
+## 🚀 วิธีติดตั้งและใช้งาน
 
-1. Install XAMPP or WAMP.
-2. Copy the project into the web server directory.
-3. Import the SQL file into MySQL.
-4. Update the database configuration in `config.php`.
-5. Start Apache and MySQL.
-6. Open the project in your browser.
-
----
-
-## Screenshots
-
-Screenshots will be added soon.
+1. ติดตั้ง **XAMPP** หรือ **WAMP**
+2. คัดลอกโปรเจกต์ไปยังโฟลเดอร์ของ Web Server
+3. Import ไฟล์ฐานข้อมูล (.sql) เข้า MySQL
+4. แก้ไขค่าการเชื่อมต่อฐานข้อมูลในไฟล์ `config.php`
+5. เปิดใช้งาน Apache และ MySQL
+6. เปิดโปรเจกต์ผ่าน Web Browser
 
 ---
 
-## Documentation
+## 📷 ภาพตัวอย่างระบบ (Screenshots)
 
-This repository includes:
+ภาพตัวอย่างการใช้งานระบบอยู่ในโฟลเดอร์
+
+```text
+screenshots/
+```
+
+ประกอบด้วยตัวอย่างหน้าจอการทำงาน เช่น
+
+- หน้าเข้าสู่ระบบ
+- หน้าแดชบอร์ด
+- หน้าจัดการวัสดุ
+- หน้าการเบิกวัสดุ
+- หน้ารายงาน
+
+---
+
+## 📄 เอกสารที่อยู่ภายในโปรเจกต์
+
+Repository นี้ประกอบด้วย
 
 - Source Code
-- MySQL Database
-- User Manual (PDF)
+- ฐานข้อมูล MySQL
+- คู่มือการใช้งาน (User Manual)
 
 ---
 
-## Learning Outcome
+## 💡 สิ่งที่ได้รับจากการพัฒนาโปรเจกต์
 
-Through this project, I gained experience in:
+จากการพัฒนาโปรเจกต์นี้ ทำให้ได้รับประสบการณ์ด้าน
 
-- Web Application Development
-- CRUD Operations
-- Database Design
-- User Authentication
-- Report Generation
-- Problem Solving
-- Software Documentation
+- การพัฒนา Web Application
+- การออกแบบฐานข้อมูล (Database Design)
+- การพัฒนาระบบ CRUD
+- การจัดการสิทธิ์ผู้ใช้งาน (User Authentication)
+- การจัดการสต๊อกวัสดุ
+- การสร้างรายงาน (Report Generation)
+- การวิเคราะห์และแก้ไขปัญหา (Problem Solving)
+- การจัดทำเอกสารประกอบระบบ (Software Documentation)
 
 ---
 
-## Author
+## 👤 ผู้จัดทำ
 
 **Witthawat Boonpanya**
 
-GitHub:
-https://github.com/witthawt
+GitHub
+
+https://github.com/witthwawt
 
 ---
 
-## License
+## 📄 License
 
-This repository is published for educational and portfolio purposes only.
+โปรเจกต์นี้เผยแพร่เพื่อใช้เป็น **Portfolio** และเพื่อการศึกษาเท่านั้น ไม่อนุญาตให้นำไปใช้ในเชิงพาณิชย์โดยไม่ได้รับอนุญาตจากผู้จัดทำ
